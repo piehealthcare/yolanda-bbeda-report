@@ -1,0 +1,27 @@
+.qn-pdf-page-progress-bar {
+  width: 100%;
+  height: 8px;
+  text-align: left;
+  white-space: nowrap;
+
+  & .qn-pdf-page-progress-bar__item {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+
+    & .qn-pdf-page-progress-bar__item-wrap {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    & .qn-pdf-page-progress-bar__item-inner {
+      height: 100%;
+    }
+
+    & .qn-pdf-page-progress-bar__value {
+      font-size: 11px;
+      margin-left: 5px;
+    }
+  }
+}

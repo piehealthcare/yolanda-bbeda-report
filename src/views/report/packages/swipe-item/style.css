@@ -1,0 +1,15 @@
+.qn-report-page-swipe-item {
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  & .qn-report-page-swipe-item__icon {
+    display: inline-block;
+    width: 12px;
+    height: 15px;
+  }
+
+  & .qn-report-page-swipe-item__body {
+    position: relative;
+    padding-bottom: 12px;
+  }
+}

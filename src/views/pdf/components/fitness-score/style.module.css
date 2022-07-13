@@ -1,0 +1,20 @@
+.fitnessScore {
+  position: relative;
+  font-size: 10px;
+
+  /* stylelint-disable-next-line */
+  & :global(.qn-pdf-page-section-card__content) {
+    text-align: center;
+    padding: 6px;
+  }
+}
+
+.score {
+  font-size: 15px;
+}
+
+.scoreNum {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-blue);
+}

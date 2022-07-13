@@ -1,0 +1,5 @@
+.qn-report-page-swipe {
+  width: 100%;
+  background-color: var(--background-color-content);
+  border-radius: 8px;
+}

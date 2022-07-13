@@ -1,0 +1,43 @@
+.qn-pdf-page-level-scale {
+  width: 100%;
+  color: var(--color-grey-1);
+
+  & .qn-pdf-page-level-scale__bar-line {
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  & .qn-pdf-page-level-scale__values-bar-wrap {
+    padding: 0 5px;
+  }
+
+  & .qn-pdf-page-level-scale__values-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0;
+  }
+
+  & .qn-pdf-page-level-scale__point-item {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    top: 0;
+  }
+
+  & .qn-pdf-page-level-scale__point-scale {
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    height: 3px;
+    background-color: currentColor;
+  }
+
+  & .qn-pdf-page-level-scale__point-value {
+    flex: 1 0;
+    font-size: 8px;
+  }
+}

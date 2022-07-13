@@ -1,0 +1,26 @@
+.qn-report-page-button {
+  display: inline-block;
+  font-size: var(--text-size-small);
+  color: var(--color-white);
+  padding: 0;
+  background-color: var(--theme-color);
+  border-radius: 4px;
+  appearance: none;
+  outline: none;
+  border: none;
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:not(:first-child) {
+    margin-left: 12px;
+  }
+
+  & .qn-report-page-button__wrap {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,10 @@
+.swipe1 {
+  position: relative;
+  padding-top: 12px;
+}
+
+.tipText {
+  font-size: var(--text-size-small);
+  color: var(--color-grey-4);
+  margin-top: 12px;
+}

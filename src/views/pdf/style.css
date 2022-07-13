@@ -1,0 +1,76 @@
+@import '@/assets/style/theme.css';
+
+/* 注意蓝湖上设计稿查看自定义宽度为750 */
+
+html {
+  font-size: calc(50vw / 10);
+}
+
+/* @media screen and (max-width: 750px) {
+  html {
+    font-size: calc(50vw / 10);
+  }
+} */
+
+#app {
+  /* 打印报告可固定设为1000px */
+
+  /* width: 1000px; */
+
+  width: calc(var(--viewport-width) * 2);
+}
+
+.qn-pdf-page {
+  height: 100%;
+  background-color: var(--background-color-2);
+
+  /* 触发BFC来保证包含子元素高度 */
+  overflow: auto;
+
+  & .qn-pdf-page-section-card {
+    margin: 13px;
+  }
+
+  & .qn-pdf-page__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: #FFF;
+    background-color: var(--color-blue);
+    padding: 0 13px;
+
+    & .qn-pdf-page__title {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    & .qn-pdf-page__logo img {
+      height: 40px;
+    }
+  }
+
+  & .qn-pdf-page__body {
+    display: flex;
+    overflow: auto;
+
+    /* 低版本手机不支持 is  函数 */
+
+    /* & .qn-pdf-page__body-column:is(:nth-of-type(1)) {
+      flex: 2;
+    } */
+
+    & .qn-pdf-page__body-column:nth-of-type(1) {
+      flex: 2;
+    }
+
+    /* & .qn-pdf-page__body-column:is(:nth-of-type(2)) {
+      flex: 1;
+    } */
+
+    & .qn-pdf-page__body-column:nth-of-type(2) {
+      flex: 1;
+    }
+  }
+}

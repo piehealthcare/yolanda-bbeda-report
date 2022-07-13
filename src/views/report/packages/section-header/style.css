@@ -1,0 +1,23 @@
+.qn-report-page-section-header {
+  display: flex;
+  align-items: center;
+  height: 48px;
+
+  & .qn-report-page-section-header__title-decorator {
+    height: 14px;
+    width: 4px;
+    background-color: var(--theme-color);
+  }
+
+  & .qn-report-page-section-header__title {
+    flex: 1 0;
+    font-size: var(--text-size-larger);
+    font-weight: bold;
+    margin-left: 6px;
+  }
+
+  & .qn-report-page-section-header__controls {
+    display: flex;
+    align-items: center;
+  }
+}

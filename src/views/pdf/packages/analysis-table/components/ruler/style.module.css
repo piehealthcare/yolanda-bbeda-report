@@ -1,0 +1,48 @@
+.ruler {
+  position: relative;
+  color: var(--color-grey-1);
+  margin-bottom: 16px;
+}
+
+.rulerAxis {
+  height: 1px;
+  background-color: currentColor;
+}
+
+.pointsWrap {
+  &.pointsWrapPdLeft {
+    padding-left: 10px;
+  }
+
+  &.pointsWrapPdRight {
+    padding-right: 10px;
+  }
+}
+
+.points {
+  position: relative;
+}
+
+.scalePoint {
+  position: absolute;
+  top: 0;
+  font-size: 8px;
+  width: 1px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+.startPoint {
+  left: 0;
+}
+
+.endPoint {
+  right: -0.5px;
+}
+
+.scaleValue {
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  transform: translateX(-50%);
+}

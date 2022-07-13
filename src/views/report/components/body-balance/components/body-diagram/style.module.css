@@ -1,0 +1,147 @@
+.legends {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.legendIconSquare {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  background-color: var(--color-green);
+}
+
+.legendIconRound {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  background-color: var(--color-blue-1);
+  border-radius: 4px;
+}
+
+.bodyWrap {
+  position: relative;
+  text-align: center;
+}
+
+.bodyImage {
+  width: 126px;
+}
+
+.lineSegImage {
+  position: absolute;
+}
+
+.lineLTSegImage {
+  width: 88px;
+  left: 40px;
+  top: 64px;
+}
+
+.lineRTSegImage {
+  width: 88px;
+  right: 40px;
+  top: 64px;
+  transform: rotateY(180deg);
+}
+
+.lineLBSegImage {
+  width: 108px;
+  left: 40px;
+  bottom: 40px;
+}
+
+.lineRBSegImage {
+  width: 108px;
+  right: 40px;
+  bottom: 40px;
+  transform: rotateY(180deg);
+}
+
+.lineTrunkImage {
+  position: absolute;
+  width: 126px;
+  top: 144px;
+  left: 38px;
+}
+
+.dataCube {
+  position: absolute;
+  font-size: var(--text-size-small);
+}
+
+.dataLTCube {
+  left: 0;
+  top: -12px;
+}
+
+.dataRTCube {
+  right: 0;
+  top: -12px;
+  text-align: right;
+
+  & .dataCubeR1,
+  & .dataCubeR2,
+  & .dataCubeR3 {
+    justify-content: flex-end;
+  }
+}
+
+.dataTrunkCube {
+  left: 0;
+  bottom: 180px;
+}
+
+.dataLBCube {
+  left: 0;
+  bottom: 60px;
+}
+
+.dataRBCube {
+  right: 0;
+  bottom: 60px;
+
+  & .dataCubeR1,
+  & .dataCubeR2,
+  & .dataCubeR3 {
+    justify-content: flex-end;
+  }
+}
+
+.dataCube .dataCubeR1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dataCube .reportIcon {
+  width: 18px;
+  margin-right: 6px;
+}
+
+.dataCube .dataCubeR2 {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey-4);
+  padding: 4px 0;
+}
+
+.dataCube .dataCubeR2Wrap {
+  display: inline-block;
+  border-bottom: 1px dashed var(--color-grey-4);
+}
+
+.dataCube .dataCubeR3 {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey-4);
+  padding: 4px 0;
+}

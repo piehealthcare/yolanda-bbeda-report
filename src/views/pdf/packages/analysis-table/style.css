@@ -1,0 +1,76 @@
+.qn-pdf-page-analysis-table {
+  & .qn-pdf-page-analysis-table__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  & .qn-pdf-page-analysis-table__table-th {
+    height: 20px;
+    font-size: 11px;
+    color: #FFF;
+    background-color: var(--color-blue);
+    vertical-align: middle;
+  }
+
+  & .qn-pdf-page-analysis-table__table-name-col {
+    width: 20%;
+  }
+
+  & .qn-pdf-page-analysis-table__table-th--low {
+    width: 80px;
+    background-color: var(--color-blue-1);
+  }
+
+  & .qn-pdf-page-analysis-table__table-th--standard,
+  & .qn-pdf-page-analysis-table__table-th--normalRange {
+    background-color: var(--color-green);
+  }
+
+  & .qn-pdf-page-analysis-table__table-th--standard {
+    width: 80px;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
+
+  & .qn-pdf-page-analysis-table__table-th--high {
+    width: 180px;
+  }
+
+  & .qn-pdf-page-analysis-table__table-tr {
+    /* border-bottom: 1px solid var(--color-blue); */
+
+    &.qn-pdf-page-analysis-table__table-tr--noBottomBorder {
+      border-bottom: none;
+    }
+  }
+
+  & .qn-pdf-page-analysis-table__table-td {
+    font-size: 11px;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--color-blue);
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--color-blue);
+    }
+
+    &.qn-pdf-page-analysis-table__table-td--noLrBorder {
+      border-left: none;
+      border-right: none;
+    }
+
+    &.qn-pdf-page-analysis-table__table-td--noRBorder {
+      border-right: none;
+    }
+
+    &.qn-pdf-page-analysis-table__table-td--noBBorder {
+      border-bottom: none;
+    }
+  }
+
+  & .qn-pdf-page-analysis-table__table-levels-td {
+    padding: 0;
+    vertical-align: baseline;
+  }
+}

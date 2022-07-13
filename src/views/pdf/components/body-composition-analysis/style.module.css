@@ -1,0 +1,51 @@
+.bodyCompositionAnalysis {
+  position: relative;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  height: 20px;
+  font-size: 11px;
+  vertical-align: middle;
+  color: #FFF;
+  background-color: var(--color-blue);
+}
+
+/* .th:is(:not(:last-child)) {
+  border-right: 1px solid #FFF;
+} */
+
+.th:not(:last-child) {
+  border-right: 1px solid #FFF;
+}
+
+.thHigh {
+  width: 200px;
+}
+
+.tr {
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.td {
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  vertical-align: middle;
+
+  &:not(:last-child) {
+    border-right: 1px solid var(--color-blue);
+  }
+
+  &.tdBorderRightNone {
+    border-right: none;
+  }
+}
+
+.bgGreen {
+  background-color: var(--color-green);
+}

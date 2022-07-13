@@ -1,0 +1,48 @@
+.progressBar {
+  position: relative;
+  height: 8px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+
+  &.progressBarPaddingLeft {
+    padding-left: 10px;
+  }
+
+  &.progressBarPaddingRight {
+    padding-right: 10px;
+  }
+}
+
+.progressBar[data-level="0"] {
+  color: var(--color-blue-1);
+}
+
+.progressBar[data-level="1"] {
+  color: var(--color-green);
+}
+
+.progressBar[data-level="2"] {
+  color: var(--color-blue);
+}
+
+.progressBarWrap {
+  position: relative;
+  height: 100%;
+}
+
+.progressBarFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: currentColor;
+}
+
+.value {
+  position: absolute;
+  top: 50%;
+  font-size: 11px;
+  color: var(--text-main-color);
+  margin-left: 2px;
+  transform: translateY(-50%);
+}

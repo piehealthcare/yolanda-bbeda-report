@@ -1,0 +1,17 @@
+@import '@/assets/style/theme.css';
+
+.qn-report-page {
+  background-color: var(--background-color-1);
+  padding: 12px;
+  box-sizing: border-box;
+
+  & .qn-report-page__section {
+    margin-bottom: 12px;
+  }
+
+  & .qn-report-page__impedance-tip {
+    color: var(--color-grey-4);
+    font-size: var(--text-size-small);
+    padding: 8px 0;
+  }
+}

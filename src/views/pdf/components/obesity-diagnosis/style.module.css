@@ -1,0 +1,9 @@
+.obesityDiagnosis {
+  position: relative;
+
+  /* 这里有4个等级的，为了对齐统一设为25%宽度 */
+  /* stylelint-disable-next-line */
+  & :global(.qn-pdf-page-check-tags__row-option) {
+    /* width: 25%; */
+  }
+}

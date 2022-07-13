@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+echo "如果git commit不成功，请检查是否是以下问题："
+echo "1、提交格式不规范"
+echo "2、eslint没通过"
+echo "3、单元测试没通过"
+
+
+# 使用lint-staged校验
+echo "执行lint-staged"
+npx --no-install lint-staged

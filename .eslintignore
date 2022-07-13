@@ -1,0 +1,13 @@
+**/lib/**
+build/**
+dist/**
+dist-demo/**
+setVersion.js
+test/**
+libs/**
+lib/**
+scripts/**
+publish/**
+assets/icons/**
+src/libs
+*.d.ts

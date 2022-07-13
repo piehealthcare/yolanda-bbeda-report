@@ -1,0 +1,46 @@
+.qn-report-page-level-tags {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6px;
+
+  & .qn-report-page-level-tags__item {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+
+    & .qn-report-page-level-tags__item-wrap {
+      position: relative;
+      display: flex;
+      height: 100%;
+      box-sizing: border-box;
+
+      & .qn-report-page-level-tags__name {
+        display: inline-block;
+        position: relative;
+        font-size: var(--text-size-small);
+        color: var(--color-grey-4);
+        height: 100%;
+        min-width: 16px;
+        padding: 3px 6px;
+        border-radius: 10px 0 0 10px;
+        box-sizing: border-box;
+
+        &.qn-report-page-level-tags__name--active {
+          color: var(--text-main-color);
+        }
+      }
+
+      & .qn-report-page-level-tags__check-span {
+        padding: 0 3px;
+        border-radius: 0 10px 10px 0;
+      }
+
+      & .qn-report-page-level-tags__icon {
+        width: 10px;
+        height: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

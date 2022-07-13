@@ -1,0 +1,56 @@
+.swipe1 {
+  position: relative;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-grey-3);
+  background-color: var(--background-color-1);
+}
+
+.dataTableTr:nth-of-type(2n) {
+  background-color: var(--color-white);
+}
+
+.dataTableTd {
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  border: 1px solid var(--color-grey-3);
+}
+
+.dataTableTdWhite {
+  background-color: var(--color-white);
+}
+
+.dataTableTh {
+  color: var(--color-grey-4);
+  font-weight: normal;
+}
+
+.desc {
+  position: relative;
+  color: var(--color-grey-4);
+  padding-left: 12px;
+  margin-bottom: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--theme-color);
+    left: 0;
+    top: 6px;
+    margin: auto;
+    border-radius: 50%;
+  }
+}
+
+.tipText {
+  color: var(--color-grey-4);
+  font-size: var(--text-size-small);
+  margin-top: 12px;
+}

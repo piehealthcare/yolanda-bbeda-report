@@ -1,0 +1,37 @@
+.weightControl {
+  position: relative;
+}
+
+.td {
+  font-size: 10px;
+  padding: 4px;
+  text-align: center;
+}
+
+.tdBold {
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+
+  & tr {
+    /* & .td:is(:not(:last-child)) {
+      border-right: 1px solid var(--color-blue);
+    } */
+
+    & .td:not(:last-child) {
+      border-right: 1px solid var(--color-blue);
+    }
+  }
+
+  /* & tr:is(:not(:last-child)) {
+    border-bottom: 1px solid var(--color-blue);
+  } */
+
+  & tr:not(:last-child) {
+    border-bottom: 1px solid var(--color-blue);
+  }
+}

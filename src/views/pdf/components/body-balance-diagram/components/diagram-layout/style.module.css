@@ -1,0 +1,93 @@
+.diagramLayout {
+  text-align: center;
+}
+
+.dataContent {
+  display: inline-block;
+  position: relative;
+  margin: 30px;
+}
+
+.bodyImage {
+  width: 100px;
+}
+
+.leftArmLine {
+  position: absolute;
+  top: 60px;
+  left: -32px;
+  width: 64px;
+}
+
+.rightArmLine {
+  position: absolute;
+  top: 60px;
+  right: -32px;
+  width: 64px;
+}
+
+.trunkLine {
+  position: absolute;
+  top: 120px;
+  left: -35px;
+  width: 87px;
+}
+
+.leftLegLine {
+  position: absolute;
+  bottom: 50px;
+  left: -35px;
+  width: 74px;
+}
+
+.rightLegLine {
+  position: absolute;
+  bottom: 50px;
+  right: -35px;
+  width: 74px;
+}
+
+.floatedDataBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.floatedDataBoxLeftArm {
+  left: -55px;
+  bottom: 228px;
+}
+
+.floatedDataBoxRightArm {
+  right: -55px;
+  bottom: 228px;
+}
+
+.floatedDataBoxTrunk {
+  left: -55px;
+  bottom: 145px;
+}
+
+.floatedDataBoxLeftLeg {
+  left: -55px;
+  bottom: 65px;
+}
+
+.floatedDataBoxRightLeg {
+  right: -55px;
+  bottom: 65px;
+}
+
+.dashedLine {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px dashed currentColor;
+  margin: 2px 0;
+}
+
+.unitText {
+  font-size: 0.8em;
+}

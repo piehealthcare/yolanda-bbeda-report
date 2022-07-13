@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+# 使用commitlint校验提交格式
+echo "执行commitlint"
+npx --no-install commitlint --edit "$1"
